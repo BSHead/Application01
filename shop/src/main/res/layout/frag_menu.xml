@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+   <ListView
+       android:id="@+id/leftlv"
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="match_parent"></ListView>
+    <ListView
+        android:id="@+id/rigntlv"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/menu_sum_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="价格："
+        android:textSize="26sp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/menu_number"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:text="7" />
+</RelativeLayout>
+</LinearLayout>
